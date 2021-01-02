@@ -2,16 +2,10 @@
 # see travis-ci.org for details
 
 language: cpp
-os: linux
-dist: xenial
 
-branches:
-  only:
-    - main
-
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y build-essential cmake
+os:
+  - linux
+  - osx
 
 before_script:
   - mkdir build
