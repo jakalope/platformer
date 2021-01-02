@@ -5,6 +5,14 @@
 
 namespace platformer {
 
+void PrintTo(const Point2i& value, std::ostream* out) {
+  (*out) << value.x() << ',' << value.y();
+}
+
+void PrintTo(const Point2f& value, std::ostream* out) {
+  (*out) << value.x() << ',' << value.y();
+}
+
 using ScalarTypes = ::testing::Types<int32_t, float>;
 
 template <typename T>
