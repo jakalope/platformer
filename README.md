@@ -2,7 +2,12 @@
 
 A project whose aim is to auto-generate platformer levels of varying difficulty.
 
-## Build
+## Status
+
+[![Build Status](https://travis-ci.com/jakalope/platformer.svg?branch=main)](https://travis-ci.com/github/jakalope/platformer)
+
+## Local Build
+
 
 ```
 mkdir -p build
@@ -11,9 +16,9 @@ cmake ..
 make -j
 ```
 
-## Run Tests
+## Run the Tests
 
 ```
 cd build
-ctest
+make -j && ctest
 ```
