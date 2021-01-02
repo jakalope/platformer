@@ -6,10 +6,6 @@ os:
   -linux
   -osx
 
-branches:
-  only:
-    - main
-
 before_script:
   - mkdir build
 
