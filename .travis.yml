@@ -2,9 +2,10 @@
 # see travis-ci.org for details
 
 language: cpp
+
 os:
-  -linux
-  -osx
+  - linux
+  - osx
 
 before_script:
   - mkdir build
