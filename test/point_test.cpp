@@ -1,6 +1,7 @@
 #include "platformer/point.h"
 
 #include <gtest/gtest.h>
+#include <sstream>
 
 namespace platformer {
 
@@ -88,6 +89,14 @@ TYPED_TEST(PointOperator, PointAndScalar) {
   ASSERT_EQ(Point2T(-2, -1), pt - scalar);
   ASSERT_EQ(Point2T(3, 6), pt * scalar);
   ASSERT_EQ(Point2T(3, 6), scalar * pt);
+}
+
+TYPED_TEST(PointOperator, PointPrinter) {
+  using Point2T = Point2<TypeParam>;
+  std::ostringstream ss;
+  ss << Point2T(1, 2);
+  auto str = ss.str();
+  ASSERT_EQ(str, "(1,2)");
 }
 
 } // namespace platformer

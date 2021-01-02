@@ -104,12 +104,12 @@ using Point2f = Point2<float>;
 
 } // namespace platformer
 
-std::ostream& operator<<(std::ostream& out, platformer::Point2i pt) {
+std::ostream& operator<<(std::ostream& out, const platformer::Point2i& pt) {
   out << '(' << pt.x() << ',' << pt.y() << ')';
   return out;
 }
 
-std::ostream& operator<<(std::ostream& out, platformer::Point2f pt) {
+std::ostream& operator<<(std::ostream& out, const platformer::Point2f& pt) {
   out << '(' << pt.x() << ',' << pt.y() << ')';
   return out;
 }

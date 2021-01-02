@@ -15,4 +15,5 @@ make -j
 
 ```
 cd build
+ctest
 ```
